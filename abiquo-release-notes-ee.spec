@@ -7,13 +7,13 @@
 Summary: Abiquo release notes files
 Name: abiquo-release-notes-ee
 Version: %{real_release_version}
-Release: 1
+Release: 2
 License: GPL
 Group: System Environment/Base
 Source: %{name}-%{builtin_release_version}.tar.gz
-Obsoletes: indexhtml
+Obsoletes: indexhtml abiquo-release-notes
 BuildRoot: %{_tmppath}/abiquo-release-notes-root
-Provides: indexhtml
+Provides: indexhtml abiquo-release-notes
 
 %description
 Abiquo release notes files.
@@ -35,6 +35,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_defaultdocdir}/HTML
 
 %changelog
+* Wed Jan 26 2011 Sergio Rubio <srubio@abiquo.com> - 1.7-2
+- obsoletes abiquo-release-notes
+
 * Mon Dec 13 2010 Sergio Rubio <rubiojr@frameos.org> - 1.7-1
 -  updated to 1.7
 
