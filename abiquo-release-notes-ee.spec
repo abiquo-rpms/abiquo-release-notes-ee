@@ -7,13 +7,14 @@
 Summary: Abiquo release notes files
 Name: abiquo-release-notes-ee
 Version: %{real_release_version}
-Release: 3
+Release: 4
 License: GPL
 Group: System Environment/Base
 Source: %{name}-%{builtin_release_version}.tar.gz
 Obsoletes: indexhtml abiquo-release-notes
 BuildRoot: %{_tmppath}/abiquo-release-notes-root
 Provides: indexhtml abiquo-release-notes
+BuildArch: noarch
 
 %description
 Abiquo release notes files.
@@ -35,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_defaultdocdir}/HTML
 
 %changelog
+* Wed Feb 02 2011 Sergio Rubio <srubio@abiquo.com> - 1.7-4
+- changed buildarch to noarch
+
 * Wed Feb 02 2011 Sergio Rubio <srubio@abiquo.com> - 1.7-3
 - Update release notes and release name
 
