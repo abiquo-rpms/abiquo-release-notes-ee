@@ -1,5 +1,5 @@
-%define builtin_release_version 1.7
-%define builtin_release_name Final 
+%define builtin_release_version 1.7.5
+%define builtin_release_name RC1
 %define real_release_version %{?release_version}%{!?release_version:%{builtin_release_version}}
 %define real_release_name %{?release_name}%{!?release_name:%{builtin_release_name}}
 %define current_arch %{_arch}
@@ -7,7 +7,7 @@
 Summary: Abiquo release notes files
 Name: abiquo-release-notes-ee
 Version: %{real_release_version}
-Release: 4
+Release: 1
 License: GPL
 Group: System Environment/Base
 Source: %{name}-%{builtin_release_version}.tar.gz
@@ -36,6 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_defaultdocdir}/HTML
 
 %changelog
+* Thu Mar 17 2011 Sergio Rubio <srubio@abiquo.com> - 1.7.5-1
+- version bump
+
 * Wed Feb 02 2011 Sergio Rubio <srubio@abiquo.com> - 1.7-4
 - changed buildarch to noarch
 
