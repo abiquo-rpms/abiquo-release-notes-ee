@@ -1,5 +1,5 @@
 %define builtin_release_version 1.7.5
-%define builtin_release_name RC2
+%define builtin_release_name GA 
 %define real_release_version %{?release_version}%{!?release_version:%{builtin_release_version}}
 %define real_release_name %{?release_name}%{!?release_name:%{builtin_release_name}}
 %define current_arch %{_arch}
@@ -7,7 +7,7 @@
 Summary: Abiquo release notes files
 Name: abiquo-release-notes-ee
 Version: %{real_release_version}
-Release: 2
+Release: 3
 License: GPL
 Group: System Environment/Base
 Source: %{name}-%{builtin_release_version}.tar.gz
@@ -36,6 +36,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_defaultdocdir}/HTML
 
 %changelog
+* Mon Mar 28 2011 Sergio Rubio <srubio@abiquo.com> - 1.7.5-3
+- bumped release
+- 1.7.5 GA
+
 * Tue Mar 22 2011 Sergio Rubio <rubiojr@frameos.org> - 1.7.5-2
 - bumped release to RC2
 
