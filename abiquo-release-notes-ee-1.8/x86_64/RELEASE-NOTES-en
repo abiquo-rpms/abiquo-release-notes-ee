@@ -1,0 +1,22 @@
+Abiquo 1.8.0 Release Notes
+--------------------------
+The new Abiquo 1.8 Pilaf includes the following new features:
+
+* Full Role Based Access Control – Define unlimited roles and select from over 45 privileges for each. Create your own roles and assign their privileges. Generic roles and Enterprise roles are available to adapt your platform to your needs.
+* LDAP/AD Integration – Users and roles optionally defined in LDAP. Login authenticated through LDAP.
+* VMware Distributed Virtual Switch - Abiquo can work in VMware infrastructures with dVS, allowing advanced network management.
+* High Availability – Restart VMs if host fails. First release of generic Abiquo HA. If a host fails, Abiquo moves the VMs to another host.
+* Persistent Volume Management – iSCSI volumes can be added to an enterprise's virtual storage pool using the IQN and LUN. For companies that want to manage storage devices other than NetApp, Nexenta or LVM. System administrators can create volumes in the storage device and assign these volumes to an enterprise's virtual storage pool.
+* Cisco UCS Discovery and Power Management - First UCS integration in the Abiquo platform. Detect UCS devices, discover blades and power on/off blades.
+* Secure VNC Connections to VMs - VNC connections are now password enabled.
+* Configurable Reservation – Allows you to restrict an enterprise to reserved machines. In enterprise creation you can now strictly reserve machines for an enterprise. Otherwise, an enterprise with reserved machines can use these machines and the shared pool of resources for all enterprises.
+* API Extensions – Allows VM Start/Stop/Pause and Rules management. New features in the API for this release. Now you can power on/off, reset or pause a virtual machine and all rules management is through the API.
+* Accounting enhancements - Allows you to define cost codes for VM images (e.g. for Windows licenses). You can charge a different price depending on the template selected by the user.
+* Basic Power-on Order - Now you can determine the deploy order of VMs inside a virtual appliance based on VM names.
+* Storage Improvements - Storage management is now more usable with a streamlined attach process.
+* Billing URL - This feature allows the cloud provider to integrate Abiquo into the billing system.
+* Installer - Significant improvements to the installer. Updated installation workflow and default values defined to help users install more quickly.
+* Minor GUI and Error Message Enhancements - Improved usability.
+* Bugfixing of issues detected - For example, orphan issues and IQN re-use.
+
+For more details visit our wiki at http://wiki.abiquo.com
